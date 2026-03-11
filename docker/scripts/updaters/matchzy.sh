@@ -3,7 +3,7 @@
 
 source /utils/logging.sh
 
-install_custom_matchplugin() {
+update_matchzy() {
     local enabled="${INSTALL_MATCHZY:-0}"
     enabled="$(echo "$enabled" | tr '[:upper:]' '[:lower:]')"
 
