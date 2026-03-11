@@ -12,6 +12,7 @@ source /scripts/updaters/metamod.sh
 source /scripts/updaters/counterstrikesharp.sh
 source /scripts/updaters/swiftlys2.sh
 source /scripts/updaters/modsharp.sh
+source /scripts/updaters/matchzy.sh #260312 03:35
 
 # Backwards compatibility: Map old ADDON_SELECTION to new boolean variables
 migrate_addon_selection() {
