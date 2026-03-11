@@ -10,10 +10,7 @@
   "description": "The SteamRT3 Platform image for Pterodactyl CS2 servers is packed with numerous features, designed to simplify server management and reduce hassle.",
   "features": [],
   "docker_images": {
-    "KitsuneLab CS2 - GitHub - Unlimited": "ghcr.io/k4ryuu/cs2-egg:latest",
-    "KitsuneLab CS2 Beta - GitHub - Unlimited": "ghcr.io/k4ryuu/cs2-egg:beta",
-    "KitsuneLab CS2 - DockerHub - Limited": "docker.io/sples1/k4ryuu-cs2:latest",
-    "KitsuneLab CS2 Beta - DockerHub - Limited": "docker.io/sples1/k4ryuu-cs2:beta"
+    "NXS CS2 - GHCR": "ghcr.io/squeezemn/cs2-egg:latest",
   },
   "file_denylist": [],
   "startup": "./game/cs2.sh {{CUSTOM_PARAMS}} -dedicated +ip 0.0.0.0 -port {{SERVER_PORT}} +map {{SRCDS_MAP}} -maxplayers {{SRCDS_MAXPLAYERS}} +sv_setsteamaccount {{STEAM_ACC}} +game_type {{GAME_TYPE}} +game_mode {{GAME_MODE}}",
@@ -229,6 +226,16 @@
       "user_viewable": false,
       "user_editable": false,
       "rules": "nullable|numeric",
+      "field_type": "text"
+    },
+    {
+      "name": "MatchZy",
+      "description": "Custom match plugin updater. Requires CounterStrikeSharp. Automatically installs on restart while enabled.",
+      "env_variable": "INSTALL_MATCHZY",
+      "default_value": "0",
+      "user_viewable": true,
+      "user_editable": true,
+      "rules": "required|boolean",
       "field_type": "text"
     }
   ]
