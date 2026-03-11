@@ -5,9 +5,9 @@
     "update_url": "https://raw.githubusercontent.com/squeezemn/CS2-Egg/main/pterodactyl/kitsunelab-cs2-egg.json"
   },
   "exported_at": "2026-02-7T15:31:48+02:00",
-  "name": "KitsuneLab CS2 Egg @ K4ryuu",
-  "author": "k4ryuu@icloud.com",
-  "description": "The SteamRT3 Platform image for Pterodactyl CS2 servers is packed with numerous features, designed to simplify server management and reduce hassle.",
+  "name": "NXS Gaming CS2 Egg @ Sica",
+  "author": "squeezemn@gmail.com",
+  "description": "Blyat project v1.",
   "features": [],
   "docker_images": {
     "NXS CS2 - GHCR": "ghcr.io/squeezemn/cs2-egg:latest",
