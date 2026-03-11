@@ -4,7 +4,7 @@
 source /utils/logging.sh
 
 install_custom_matchplugin() {
-    local enabled="${MATCH_PLUGIN:-0}"
+    local enabled="${INSTALL_MATCHZY:-0}"
     enabled="$(echo "$enabled" | tr '[:upper:]' '[:lower:]')"
 
     local BASE_DIR="./game/csgo/addons/counterstrikesharp"
