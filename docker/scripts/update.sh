@@ -121,6 +121,11 @@ update_addons() {
         add_to_gameinfo "sharp"
     fi
 
+    # MatchZy (testing env)
+    if [ "${INSTALL_MATCHPLUGIN:-0}" -eq 1 ]; then
+        update_matchplugin
+    fi
+
     # Ensure MetaMod is always first addon after LowViolence (if present)
     ensure_metamod_first
 
